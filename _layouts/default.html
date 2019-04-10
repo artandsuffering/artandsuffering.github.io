@@ -10,8 +10,12 @@
 	{% if site.tags != "" %}
 		{% include collecttags.html %}
 	{% endif %}
-	{% include header.html %}
-    {% include navigation.html %}
-    {{ content }}
+	{% include site-header.html %}
+	<div id="content">
+		{{ content }}
+	</div>
+	<div id="sidebar">
+		{% include sidebar.html %}
+	</div>
   </body>
 </html>

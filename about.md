@@ -2,5 +2,7 @@
 layout: default
 title: About
 ---
-
-This page tells you a little bit about me.
+<section>
+	<header>About</header>
+	This page tells you a little bit about me.
+</section>
