@@ -1,3 +1,30 @@
 .current {
 	color: green;
 }
+
+header {
+	background-image: url("/assets/images/bosch_last_judgement.jpg");
+	background-size: cover;
+	height: 16vw;
+	line-height: 16vw;
+	text-align: center;
+	
+	h1 {
+		margin: 0;
+		padding: 0;
+		font-size: 4em;
+		color: #ffffff;
+	}
+}
+
+body {
+	background-color: #cccccc;
+}
+
+ul {
+	list-style-type: none;
+	
+	li {
+		background: #ffffff;
+	}
+}
