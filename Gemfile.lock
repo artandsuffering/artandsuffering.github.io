@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     activesupport (4.2.10)
       i18n (~> 0.7)
@@ -236,13 +236,18 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2019.1)
+      tzinfo (>= 1.0.0)
     unicode-display_width (1.5.0)
+    wdm (0.1.1)
 
 PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
   github-pages
+  tzinfo-data (~> 1.2)
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
    2.0.1

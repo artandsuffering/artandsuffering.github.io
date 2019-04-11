@@ -1,0 +1,9 @@
+<div class="postpreview">
+	<a href="{{ post.url }}">{{ post.title }} ({{ post.date | date_to_string}})</a>
+	{{ post.excerpt | truncatewords:65 }}
+	<small>
+		{% for category in post.categories %}
+			<a href="/categories/{{ category }}/">{{ category }}</a>
+		{% endfor %}
+	</small>
+</div>
