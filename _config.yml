@@ -1,6 +1,6 @@
 url: "https://artandsuffering.com"
 
-sass:
-    sass_dir: /_sass
-    
 permalink: /:year/:month/:day/:title:output_ext
+
+sass:
+    sass_dir: _sass
