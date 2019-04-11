@@ -3,7 +3,7 @@
 	{{ post.excerpt | truncatewords:65 }}
 	<small>
 		{% for category in post.categories %}
-			<a href="/categories/{{ category }}/">{{ category }}</a>
+			<a href="/categories/{{ category }}.html">{{ category }}</a>
 		{% endfor %}
 	</small>
 </div>
