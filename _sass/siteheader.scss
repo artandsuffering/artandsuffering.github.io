@@ -16,21 +16,36 @@
 }
 
 #blogdescription {
-	position: relative;
-	display: inline;
-	font-size: 1.17em;
 	color: white;
+	text-align: right;
 	line-height: 0em;
+	padding-right: 10px;
+	padding-top: 1px;
+	padding-bottom: 8px;
 }
-
+/*
 @media only screen and (min-width: 730px) {
 	#blogdescription {
+		position: relative;
+		display: inline;
+		font-size: 1.17em;
+		line-height: 0em;
 		left: calc(100vw - 705px);
 	}
 	
 }
-
-@media only screen and (max-width: 730px) {
+*/
+@media only screen and (min-width: 488px) {
+	#blogdescription {
+		color: white;
+		text-align: right;
+		line-height: 0em;
+		padding-right: 10px;
+		padding-top: 1px;
+		padding-bottom: 8px;
+	}
+}
+@media only screen and (max-width: 488px) {
 	#blogdescription {
 		display: none;
 	}
@@ -38,7 +53,6 @@
 
 nav {
 	a {text-decoration-line: underline;}
-	display: inline;
 }
 
 .current {
