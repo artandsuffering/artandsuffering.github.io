@@ -1,8 +1,22 @@
 #siteheader {
+	background-color: #d7263d;
+	a {
+		color: #bfc0c0;
+	}
+	padding-left: 10px;
+	padding-bottom: 2px;
 }
 
 #sitetitle {
-	text-align: center;
+	a {
+		color: white;
+		text-decoration-color: black;
+		text-decoration-line: underline;
+	}
+}
+
+nav {
+	a {text-decoration-line: underline;}
 }
 
 .current {

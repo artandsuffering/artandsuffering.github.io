@@ -12,11 +12,13 @@
   <body>
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 	{% include siteheader.html %}
-	<div id="content">
-		{{ content }}
-	</div>
-	<div id="sidebar">
-		{% include sidebar.html %}
+	<div id="contentsidebarwrapper">
+		<div id="sidebar">
+			{% include sidebar.html %}
+		</div>
+		<div id="content">
+			{{ content }}
+		</div>
 	</div>
   </body>
 </html>

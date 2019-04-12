@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 <section>
-	<header>Latest posts</header>
+	<header><h2>Latest posts</h2></header>
 	<ul>
 		{% for post in site.posts %}
 			<li>
