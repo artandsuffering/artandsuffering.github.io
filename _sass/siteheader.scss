@@ -15,8 +15,30 @@
 	}
 }
 
+#blogdescription {
+	position: relative;
+	display: inline;
+	font-size: 1.17em;
+	color: white;
+	line-height: 0em;
+}
+
+@media only screen and (min-width: 730px) {
+	#blogdescription {
+		left: calc(100vw - 705px);
+	}
+	
+}
+
+@media only screen and (max-width: 730px) {
+	#blogdescription {
+		display: none;
+	}
+}
+
 nav {
 	a {text-decoration-line: underline;}
+	display: inline;
 }
 
 .current {
