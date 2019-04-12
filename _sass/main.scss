@@ -136,6 +136,14 @@ p {
 	#content {
 		width: 75vw;
 		float: left;
+		section {
+			max-width: calc(75vw - 20px);
+			background-color: white;
+		}
+		article {
+			max-width: calc(75vw - 20px);
+			background-color: white;
+		}
 	}
 
 	#sidebar {
@@ -144,7 +152,17 @@ p {
 	}
 }
 
-@media only screen and (max-width: 819px) {
+@media only screen and (max-width: 645px) {
+	#content {
+		section {
+			max-width: calc(100vw - 20px);
+			background-color: white;
+		}
+		article {
+			max-width: calc(100vw - 20px);
+			background-color: white;
+		}
+	}
 }
 
 
