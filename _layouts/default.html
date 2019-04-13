@@ -7,17 +7,19 @@
 	{% endif %}
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
   </head>
   <body>
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 	{% include siteheader.html %}
 	<div id="contentsidebarwrapper">
-		<div id="sidebar">
-			{% include sidebar.html %}
-		</div>
+		<div id="spacer1"></div>
 		<div id="content">
 			{{ content }}
+		</div>
+		<div id="spacer2"></div>
+		<div id="sidebar">
+			{% include sidebar.html %}
 		</div>
 	</div>
   </body>
