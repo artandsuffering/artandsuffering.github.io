@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=1920, initial-scale=1.0">
 	{% if site.categories != "" %}
 		{% include collectcategories.html %}
 	{% endif %}
@@ -11,16 +11,17 @@
   </head>
   <body>
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-	{% include siteheader.html %}
-	<div id="contentsidebarwrapper">
+	<div id="sitewrapper">
 		<div id="spacer1"></div>
-		<div id="content">
-			{{ content }}
+		<div id="contentsidebarheader">
+			{% include siteheader.html %}
+			<div id="contentsidebar">
+				<div id="content">{{ content }}</div>
+				<div id="spacer2"></div>
+				<div id="sidebar">{% include sidebar.html %}</div>
+			</div>
 		</div>
-		<div id="spacer2"></div>
-		<div id="sidebar">
-			{% include sidebar.html %}
-		</div>
+		<div id="spacer3"></div>
 	</div>
   </body>
 </html>
