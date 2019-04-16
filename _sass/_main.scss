@@ -1,11 +1,11 @@
-$fontstackserif: "Liberation Serif", Times, Georgia, serif;
+$fontstackserif: "Times New Roman", "Liberation Serif", Times, Georgia, serif;
 $pfontsizeserif: 1.25rem;
 $h1fontsizeserif: $pfontsizeserif*2;
 $h2fontsizeserif: $pfontsizeserif*1.5;
 $h3fontsizeserif: $pfontsizeserif*1.25;
 $lineheightserif: 1.25em;
 
-$fontstacksans: "Liberation Sans", Helvetica, Verdana, sans-serif;
+$fontstacksans: Arial, "Liberation Sans", Helvetica, Verdana, sans-serif;
 $fontratio: 1.125rem/$pfontsizeserif;
 $lineheightsans: (1/$fontratio)*$lineheightserif;
 
