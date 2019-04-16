@@ -1,11 +1,11 @@
-$fontstackserif: "Times New Roman", Times, Georgia, serif;
+$fontstackserif: "Times New Roman", "Liberation Serif", Times, Georgia, serif;
 $pfontsizeserif: 1.25rem;
 $h1fontsizeserif: $pfontsizeserif*2;
 $h2fontsizeserif: $pfontsizeserif*1.5;
 $h3fontsizeserif: $pfontsizeserif*1.25;
 $lineheightserif: 1.25em;
 
-$fontstacksans: Arial, Helvetica, Verdana, sans;
+$fontstacksans: Arial, "Liberation Sans", Helvetica, Verdana, sans;
 $fontratio: 1.125rem/$pfontsizeserif;
 $lineheightsans: (1/$fontratio)*$lineheightserif;
 
@@ -31,7 +31,7 @@ html {
 	color: #272726;
 }
 body {
-	font-family: "Times New Roman", serif;
+	font-family: $fontstackserif;
 	font-size: $pfontsizeserif;
 	line-height: $lineheightserif;
 	height: 100%;
