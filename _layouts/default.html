@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-	<meta name="viewport" content="width=1920, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	{% if site.categories != "" %}
 		{% include collectcategories.html %}
 	{% endif %}
@@ -12,7 +12,11 @@
   <body>
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 	<div id="sitewrapper">
-		<div id="spacer1"></div>
+		<div id="spacer1">
+		<img id="background-left" src="/assets/images/le-beau-soir-top-left.png">
+		<!--<img id="background-left" src="/assets/images/le-beau-soir-left.png">-->
+		<img id="background-left-2" src="/assets/images/le-beau-soir-left.png">
+		</div>
 		<div id="contentsidebarheader">
 			{% include siteheader.html %}
 			<div id="contentsidebar">
@@ -21,7 +25,11 @@
 				<div id="sidebar">{% include sidebar.html %}</div>
 			</div>
 		</div>
-		<div id="spacer3"></div>
+		<div id="spacer3">
+		<!--<img id="background-right" src="/assets/images/le-beau-soir-right.png">-->
+		<img id="background-right" src="/assets/images/le-beau-soir-top-right.png">
+		<img id="background-right-2" src="/assets/images/le-beau-soir-right.png">
+		</div>
 	</div>
   </body>
 </html>

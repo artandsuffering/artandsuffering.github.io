@@ -1,202 +1,223 @@
+$fontstackserif: "Times New Roman", Times, Georgia, serif;
+$pfontsizeserif: 1.25rem;
+$h1fontsizeserif: $pfontsizeserif*2;
+$h2fontsizeserif: $pfontsizeserif*1.5;
+$h3fontsizeserif: $pfontsizeserif*1.25;
+$lineheightserif: 1.25em;
+
+$fontstacksans: Arial, Helvetica, Verdana, sans;
+$fontratio: 1.125rem/$pfontsizeserif;
+$lineheightsans: (1/$fontratio)*$lineheightserif;
+
 @-webkit-viewport{width:device-width}
 @-moz-viewport{width:device-width}
 @-ms-viewport{width:device-width}
 @-o-viewport{width:device-width}
 @viewport{width:device-width}
 
-//html {height: 100%;}
-body {background-color: white;}//#dfc598;}
 
+html {
+	height: 100%;
+	min-height: ($pfontsizeserif 
+		+ $h3fontsizeserif*$fontratio*($lineheightsans/1em) 
+		+ $h1fontsizeserif*($lineheightserif/1em))*(903/270); 
+}
 * {
 	margin: 0;
 	padding: 0;
 	-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 			box-sizing: border-box;
+	color: #272726;
+}
+body {
+	font-family: "Times New Roman", serif;
+	font-size: $pfontsizeserif;
+	line-height: $lineheightserif;
+	height: 100%;
+	ul {list-style-type: none;}
 }
 
-ul {list-style-type: none;}
+*.sans {
+	font-family: $fontstacksans;
+	font-size: $fontratio*1em;
+	line-height: $lineheightsans;
+}
+
+p.sans {
+	font-size: $pfontsizeserif*$fontratio;
+	line-height: $lineheightsans;
+}
+
+h1.sans {
+	font-size: $h1fontsizeserif*$fontratio;
+	line-height: $lineheightsans;
+}
+
+h2.sans {
+	font-size: $h2fontsizeserif*$fontratio;
+	line-height: $lineheightsans;
+}
+
+h3.sans, h4.sans, h5.sans {
+	font-size: $h3fontsizeserif*$fontratio;
+	line-height: $lineheightsans;
+}
+
+h1 {
+	font-size: $h1fontsizeserif;
+	line-height: $lineheightserif;
+}
+
+h2 {
+	font-size: $h2fontsizeserif;
+	line-height: $lineheightserif;
+}
+
+h3, h4, h5 {
+	font-size: $h3fontsizeserif;
+	line-height: $lineheightserif;
+}
+
+#sitetitle {a {color: white;}}
+
+nav {
+	a.sans {
+		font-size: $h3fontsizeserif*$fontratio;
+		line-height: $lineheightsans;
+		color: #dfc598;
+	}
+}
+
+#latestposts {
+	h3, h4, h5, {font-weight: normal;}
+	h3, h4 {
+		font-size: $h2fontsizeserif*$fontratio;
+	}
+}
+
+.postpreview {
+	border-bottom: 1px solid black;
+	max-width: 32*$pfontsizeserif;
+	
+}
 
 #sitewrapper {
 	display: flex;
 	flex-direction: row;
 	min-width: 0;
-	//height: 100%;
-}
-
-#spacer1 {
-	width: 322.4px;
-	//height: 722.4px;
-	min-height: 722.4px;
-	//height: 100%
-	flex-shrink: 1;
-	background-image: url("/assets/images/le-beau-soir-left.png");
-	background-size: 322.4px 722.4px;
-	background-attachment: fixed;
-}
-
-#backgroundleft {
-	width: 322.4px;
-	//height: 722.4px;
-	min-height: 722.4px;
-	//height: 100%
-	flex-shrink: 1;
-	background-image: url("/assets/images/le-beau-soir-left.png");
-	background-size: 322.4px 722.4px;
-	background-attachment: fixed;
+	height: 100%;
+	//background-color: black;
 }
 
 #contentsidebarheader {
-	width: 960px;
 	display: flex;
 	flex-direction: column;
-	flex-shrink: 1000;
-	//min-width: 0;
-	//min-width: 645px;
-
-}
-
-#spacer3 {
-	width: 253.6px;
-	//height: 722.4px;
-	min-height: 722.4px;
-	//height: 100%
-	flex-shrink: 0;
-	background-image: url("/assets/images/le-beau-soir-right.png");
-	background-size: 253.6px 722.4px;
-	background-position: top right;
-	background-attachment: fixed;
-}
-
-#backgroundright {
-	width: 322.4px;
-	//height: 722.4px;
-	min-height: 722.4px;
-	//height: 100%
+	height: 100%;
+	flex-grow: 1;
 	flex-shrink: 1;
-	background-image: url("/assets/images/le-beau-soir-left.png");
-	background-size: 322.4px 722.4px;
-	//background-attachment: fixed;
+	width: 34*$pfontsizeserif;
 }
 
 #siteheader {
-	width: 100%;
-	height: 216px;
-	padding-top: 125px;
-	padding-left: 120px;
-	padding-bottom: 2px;
-	background-image: url("/assets/images/le-beau-soir-top.png");
-	background-size: 960px 216px;
-	background-position: right;
-	//background-attachment: fixed;
-	flex-shrink: 1;
-	p, h1, h2, h3, h4, h5, h6, a {color: #dfc598;}
-	#sitetitle {a {font-size: 1.3em;color: white;}}
-}
+	#background-top {
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: -3;
+		height: (270/903)*100%;
+		min-height: 21*$pfontsizeserif*(270/903);
+		transform: translateX(-1*(317/1200)*100%);
+	}
 
-#backgroundtop {
-	width: 100%;
-	height: 216px;
-	padding-top: 125px;
-	padding-left: 120px;
-	padding-bottom: 2px;
-	background-image: url("/assets/images/le-beau-soir-top.png");
-	background-size: 960px 216px;
-	background-position: right;
-	//background-attachment: fixed;
-	flex-shrink: 1;
-	p, h1, h2, h3, h4, h5, h6, a {color: #dfc598;}
-	#sitetitle {a {font-size: 1.3em;color: white;}}
+	background-repeat: no-repeat;
+	padding-left: $pfontsizeserif;
+	padding-bottom: 0;
+	padding-right: $pfontsizeserif;
+	padding-top: $pfontsizeserif;
+	min-height: $pfontsizeserif 
+				+ $h3fontsizeserif*$fontratio*($lineheightsans/1em) 
+				+ $h1fontsizeserif*($lineheightserif/1em);
+	height: (270/903)*100%;
+	flex-shrink: 0;
+	min-width: 0;
 }
 
 
 #contentsidebar {
-	//width: 100%;
 	display: flex;
 	flex-direction: row;
-	//background-color: orange;
-	flex-shrink: 1;
+	flex-wrap: wrap-reverse;
 	min-width: 0;
+	background-color: white;
 }
 
 #content {
-	//background-color: white;
-	padding-left: 10px;
-	padding-bottom: 10px;
-	padding-right: 10px;
-	flex-shrink: 0;
-	p, h1, h2, h3, h4, h5, h6, a {color: #272726;}
-	//background-color: #dfc598;
-}
-
-#spacer2 {
-	width: 90px;
-	flex-shrink: 1;
-	//background-color: green;
+	padding-left: $pfontsizeserif;
+	padding-bottom: $pfontsizeserif;
+	padding-right: $pfontsizeserif;
+	padding-top: $pfontsizeserif;
+	width: 34*$pfontsizeserif;
+	flex-grow: 100000;
+	min-width: 0;
 }
 
 #sidebar {
-	padding-left: 10px;
-	padding-bottom: 10px;
-	padding-right: 10px;
-	//background-color: #bfc0c0;
-	//background-color: #D3C6A0;
-	//background-color: #272726;
-	p, h1, h2, h3, h4, h5, h6, a {color: #272726;}
+	padding-left: $pfontsizeserif;
+	padding-bottom: $pfontsizeserif;
+	padding-right: $pfontsizeserif;
+	padding-top: $pfontsizeserif;
+	width: 12*$pfontsizeserif;
 	background-color: #dfc598;
+	flex-grow: 1;
+	min-width: 0;
+	//height: 100%;
 }
 
 .bodytext {
 	p {
 		margin-top: 1em;
 		margin-bottom: 1em;
-	}
-	max-width: 625px;
-}
-
-@media only screen and (min-width: 1466px) {
-	#content {
-		width: 645px;
-	}
-	#sidebar {
-		width: 225px;
-	}
-	#contentsidebarheader {
-		min-width: 645px;
+		max-width: 32em;
 	}
 }
 
-@media only screen and (min-width: 918.6px) and (max-width: 1466px) {
-	#content {
-		max-width: none;
-		width: 100%;
+#spacer1 {
+	display: flex;
+	height: 100%;
+	min-height: 21*$pfontsizeserif;
+	#background-left {
+		height: 100%;
+		min-height: 21*$pfontsizeserif;
+		position: fixed;
+		z-index: -2;
 	}
-	#sidebar {
-		max-width: none;
-		width: 100%;
+	#background-left-2 {
+		height: 100%;
+		visibility: hidden;
+		min-width: 0;
 	}
-	#contentsidebar {
-		flex-direction: column-reverse;
-	}
-	#contentsidebarheader {
-		min-width: 645px;
-	}
+	min-width: 0;
+	flex-shrink: 10000000000;
 }
 
-@media only screen and (max-width: 918.6px) {
-	#contentsidebar {
-		flex-direction: column-reverse;
+#spacer3 {
+	display: flex;
+	height: 100%;
+	min-height: 21*$pfontsizeserif;
+	#background-right {
+		height: 100%;
+		//width: auto;
+		min-height: 21*$pfontsizeserif;
+		position: fixed;
+		right: 0;
+		z-index: -1;
 	}
-	#contentsidebarheader {
-		min-width: 0px;
-		width: 645px;
-		flex-shrink: 1;
+	#background-right-2 {
+		height: 100%;
+		visibility: hidden;
+		min-width: 0;
 	}
-	#spacer1 {
-		width: 20px;
-		flex-shrink: 1000000;
-	}
-	#spacer3 {
-		flex-shrink: 1000;
-	}
+	min-width: 0;
+	flex-shrink: 100000;
 }

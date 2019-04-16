@@ -8,20 +8,21 @@ title: Home
 	<ul>
 		{% for year in posts_by_year %}
 			<li>
-				<h3>{{ year.name }}</h3>
 				{% assign posts_by_month = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
 				<ul>
 					{% for month in posts_by_month %}
 						<li>
-							<h4>{{ month.name }}</h4>
+							<h3 class="sans">{{ month.name }} {{ year.name }}</h3>
 							<ul>
 							  {% for post in month.items %}
 								<li>{% include postpreview.html %}</li>
 							  {% endfor %}
 							</ul>
+							<br class="sans">
 						</li>
 					{% endfor %}
 				</ul>
+				<br class="sans">
 			</li>
 		{% endfor %}
 	</ul>

@@ -1,12 +1,12 @@
 <div class="postpreview">
-	<header><h5><a href="{{ post.url }}">{{ post.title }}</a></h5></header>
+	<header class="post-title"><h5><a href="{{ post.url }}">{{ post.title }}</a></h5></header>
 	{{ post.excerpt }}
 	
 	<img src="/assets/images/calendar.svg">
 	<p style="display: inline">{{ post.date | date_to_string}}</p>
 	
-	<img src="assets/images/tag.svg">
+	<img src="/assets/images/tag.svg">
 	{% for category in post.categories %}
-		<a style="display:inline;" href="/categories/{{ category }}.html">{{ category }}</a>
+		<a class="sans" style="display:inline;" href="/categories/{{ category }}.html">{{ category }}</a>
 	{% endfor %}
 </div>
