@@ -80,12 +80,15 @@ h3, h4, h5 {
 	line-height: $lineheightserif;
 }
 
+.icon {
+	width: 1em;
+	height: 1em;
+}
+
 #sitetitle {
-	a {
-		color: white;
-		position: absolute;
-		bottom: $h3fontsizeserif*$fontratio*($lineheightsans/1em);
-	}
+	a {color: white;}
+	position: absolute;
+	bottom: $h3fontsizeserif*$fontratio*($lineheightsans/1em) + .5*$pfontsizeserif;
 }
 
 nav {
@@ -96,7 +99,7 @@ nav {
 		text-outline: 1px #272726 solid;
 	}
 	position: absolute;
-	bottom: 0;
+	bottom: 0.5*$pfontsizeserif;
 }
 
 #latestposts {
@@ -277,5 +280,27 @@ nav {
 		height: 2*$h3fontsizeserif*$fontratio*($lineheightsans/1em) 
 				+ $h1fontsizeserif*($lineheightserif/1em);
 	}
-	#sitetitle {font-size: $h2fontsizeserif; line-height: .75em;}
+	nav {bottom: 0;}
+	#sitetitle {
+		font-size: $h2fontsizeserif; line-height: .75em; 
+		bottom: $h3fontsizeserif*$fontratio*($lineheightsans/1em);
+	}
+	#sidebar {
+		padding-left: .5*$pfontsizeserif;
+		padding-bottom: .5*$pfontsizeserif;
+		padding-right: .5*$pfontsizeserif;
+		padding-top: .5*$pfontsizeserif;
+	}
+	#content {
+		padding-left: .5*$pfontsizeserif;
+		padding-bottom: .5*$pfontsizeserif;
+		padding-right: .5*$pfontsizeserif;
+		padding-top: .5*$pfontsizeserif;
+	}
+	#siteheader {
+		padding-left: .5*$pfontsizeserif;
+		padding-bottom: 0;
+		padding-right: .5*$pfontsizeserif;
+		padding-top: .5*$pfontsizeserif;
+	}
 }

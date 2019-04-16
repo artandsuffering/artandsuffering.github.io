@@ -1,5 +1,5 @@
 ---
 layout: categorypage
-title: "Category: fruit"
+title: "fruit"
 category: fruit
 ---

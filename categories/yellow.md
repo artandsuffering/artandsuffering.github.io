@@ -1,5 +1,5 @@
 ---
 layout: categorypage
-title: "Category: yellow"
+title: "yellow"
 category: yellow
 ---
