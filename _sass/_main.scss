@@ -274,9 +274,8 @@ nav {
 
 @media only screen and (max-width: 21*$pfontsizeserif) {
 	#siteheader {
-		height: $pfontsizeserif 
-				+ $h3fontsizeserif*$fontratio*($lineheightsans/1em) 
-				+ 2*$h1fontsizeserif*($lineheightserif/1em);
+		height: 2*$h3fontsizeserif*$fontratio*($lineheightsans/1em) 
+				+ $h1fontsizeserif*($lineheightserif/1em);
 	}
 	#sitetitle {font-size: $h2fontsizeserif; line-height: .75em;}
 }
