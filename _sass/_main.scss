@@ -36,7 +36,7 @@ body {
 	line-height: $lineheightserif;
 	height: 100%;
 	ul {list-style-type: none;}
-	background-color: black;
+	background-color: #272726;
 }
 
 *.sans {
@@ -80,14 +80,23 @@ h3, h4, h5 {
 	line-height: $lineheightserif;
 }
 
-#sitetitle {a {color: white;}}
+#sitetitle {
+	a {
+		color: white;
+		position: absolute;
+		bottom: $h3fontsizeserif*$fontratio*($lineheightsans/1em);
+	}
+}
 
 nav {
 	a.sans {
 		font-size: $h3fontsizeserif*$fontratio;
 		line-height: $lineheightsans;
 		color: #dfc598;
+		text-outline: 1px #272726 solid;
 	}
+	position: absolute;
+	bottom: 0;
 }
 
 #latestposts {
@@ -145,6 +154,7 @@ nav {
 	height: (270/903)*100%;
 	flex-shrink: 0;
 	min-width: 0;
+	position: relative;
 }
 
 
@@ -190,42 +200,75 @@ nav {
 	}
 }
 
-#spacer1 {
-	display: flex;
-	height: 100%;
-	min-height: 21*$pfontsizeserif;
-	#background-left {
+@media only screen and (min-width: 34*$pfontsizeserif) {
+	#spacer1 {
+		display: flex;
 		height: 100%;
 		min-height: 21*$pfontsizeserif;
-		position: fixed;
-		z-index: -2;
-	}
-	#background-left-2 {
-		height: 100%;
-		visibility: hidden;
+		#background-left {
+			height: 100%;
+			min-height: 21*$pfontsizeserif;
+			position: fixed;
+			z-index: -2;
+		}
+		#background-left-2 {
+			height: 100%;
+			visibility: hidden;
+			min-width: 0;
+		}
 		min-width: 0;
+		flex-shrink: 10000000000;
 	}
-	min-width: 0;
-	flex-shrink: 10000000000;
+
+	#spacer3 {
+		display: flex;
+		height: 100%;
+		min-height: 21*$pfontsizeserif;
+		#background-right {
+			height: 100%;
+			//width: auto;
+			min-height: 21*$pfontsizeserif;
+			position: fixed;
+			right: 0;
+			z-index: -1;
+		}
+		#background-right-2 {
+			height: 100%;
+			visibility: hidden;
+			min-width: 0;
+		}
+		min-width: 0;
+		flex-shrink: 100000;
+	}
 }
 
-#spacer3 {
-	display: flex;
-	height: 100%;
-	min-height: 21*$pfontsizeserif;
-	#background-right {
-		height: 100%;
-		//width: auto;
-		min-height: 21*$pfontsizeserif;
-		position: fixed;
-		right: 0;
-		z-index: -1;
+@media only screen and (max-width: 34*$pfontsizeserif) {
+	#spacer1 {
+		width: 0;
+		
+		#background-left {
+			display: none;
+		}
+		#background-left-2 {
+			display: none;
+		}
 	}
-	#background-right-2 {
-		height: 100%;
-		visibility: hidden;
-		min-width: 0;
+
+	#spacer3 {
+		width: 0;
+		
+		#background-right {
+			display: none;
+		}
+		#background-right-2 {
+			display: none;
+		}
 	}
-	min-width: 0;
-	flex-shrink: 100000;
+	
+	#siteheader {
+		background-image: url("/assets/images/le-beau-soir-top-2.png");
+		background-size: auto 100%;
+		//background-attachment: fixed;
+		background-position: top right;
+	}
 }
