@@ -6,6 +6,9 @@ layout: default
 		<h2>{{ page.title }}</h2>
 		<img src="/assets/images/calendar.svg">
 		<p style="display: inline;">{{ page.date | date_to_string }}</p>
+		{% unless page.last-modified == "0000-00-00" %}
+		(Last modified: {{ page.last-modified | date_to_string }})
+		{% endunless %}
 	</header>
 	<section class="bodytext">
 		{{ content }}
