@@ -12,3 +12,9 @@ defaults:
       type: "posts"
     values:
       last-modified: "0000-00-00"
+      
+plugins:
+  - jekyll-seo-tag
+
+title: Art & Suffering
+description: A blog about art, philosophy, and managing depression.
