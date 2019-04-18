@@ -2,6 +2,7 @@ pull_request_rules:
   - name: automatic merge on CI success
     conditions:
       - author=artandsuffering
+      - base=master
     actions:
       merge:
         method: merge
