@@ -91,6 +91,8 @@ h3, h4, h5 {
 	bottom: $h3fontsizeserif*$fontratio*($lineheightsans/1em) + .5*$pfontsizeserif;
 }
 
+#postcategories {border-bottom: 1px solid black;}
+
 button {
 	background-color: #dfc598;
 	color: #272726;
@@ -132,6 +134,10 @@ label {
 	font-size: $pfontsizeserif*$fontratio;
 	line-height: $lineheightsans;
 	text-decoration: underline;
+}
+
+blockquote {
+	border-bottom: 1px solid black;
 }
 
 cite {

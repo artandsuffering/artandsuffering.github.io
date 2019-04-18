@@ -1,6 +1,7 @@
 <blockquote id="{{ comment.id }}">
-  <div class="comment-body">{{ comment.message | markdownify }}</div>
+  {{ comment.message | markdownify }}
+  ________
   <cite>
-      <i>left by</i> {{ comment.name }} <i>on</i> {{ comment.date | date_to_string }}
+      (left by <i>{{ comment.name }}</i>, on <i>{{ comment.date | date_to_string }}</i>)
   </cite>
 </blockquote>

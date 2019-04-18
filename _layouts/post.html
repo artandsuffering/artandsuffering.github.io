@@ -14,10 +14,12 @@ layout: default
 		{{ content }}
 	</section>
 	<footer>
-		<img src="/assets/images/tag.svg">
-		{% for category in page.categories %}
-		<a class="sans" href="/categories/{{ category }}.html">{{ category }}</a>
-		{% endfor %}
-		{% include comments.html %}
+		<div id="postcategories">
+			<img src="/assets/images/tag.svg">
+			{% for category in page.categories %}
+			<a class="sans" href="/categories/{{ category }}.html">{{ category }}</a>
+			{% endfor %}
+		</div>
+		<div id="commentsection"> {% include comments.html %} </div>
 	</footer>
 </article>
