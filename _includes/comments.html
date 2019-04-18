@@ -8,9 +8,9 @@
 {% assign comment_count = comments | size %}
 {% if comment_count > 0 %}
 	{% assign author = site.authors[page.author] %}
-<h3><br></h3>
+<p><br></p>
 <div id="comments">
-	<p>Comments:</p>
+	<h3>Comments:</h3>
 	<ul>
 	{% assign sorted_comments = comments | sort: 'date' %}
 	{% for comment in sorted_comments %}
