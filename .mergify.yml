@@ -1,7 +1,7 @@
 pull_request_rules:
   - name: automatic merge on CI success
     conditions:
-    - author: "artandsuffering"
+      - author="artandsuffering"
     actions:
       merge:
         method: merge
