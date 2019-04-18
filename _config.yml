@@ -3,32 +3,31 @@ url: "https://artandsuffering.com"
 permalink: /:year/:month/:day/:title:output_ext
 
 sass:
-    sass_dir: _sass
+  sass_dir: _sass
     
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      last-modified: "0000-00-00"
-      commenting: open
-      author: artandsuffering
+-
+  scope:
+    path: ""
+    type: "posts"
+  values:
+    last-modified: "0000-00-00"
+    commenting: open
+    author: artandsuffering
 
 authors:
-    artandsuffering:
-        name: artandsuffering
-        email: lukecolburnyo@yahoo.com
-        url: https://artandsuffering.com
+  artandsuffering:
+    name: artandsuffering
+    email: "lukecolburnyo@yahoo.com"
+    url: "https://artandsuffering.com"
     
-      
 plugins:
   - jekyll-seo-tag
 
-title: Art & Suffering
-description: A blog about art, philosophy, and managing depression.
+title: "Art & Suffering"
+description: "A blog about art, philosophy, and managing depression."
 
 emptyArray: []
 
 comments:
-  receiver: https://artandsufferingcomments.azurewebsites.net/api/PostComment
+  receiver: "https://artandsufferingcomments.azurewebsites.net/api/PostComment"
