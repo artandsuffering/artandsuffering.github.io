@@ -91,6 +91,56 @@ h3, h4, h5 {
 	bottom: $h3fontsizeserif*$fontratio*($lineheightsans/1em) + .5*$pfontsizeserif;
 }
 
+button {
+	background-color: #dfc598;
+	color: #272726;
+	border: none;
+	font-family: $fontstacksans;
+	font-size: $pfontsizeserif*$fontratio;
+	line-height: $lineheightsans;
+	text-align: center;
+	text-decoration: underline;
+	display: inline-block;
+	width: 100%;
+}
+
+input[type=text] {
+	font-family: $fontstackserif;
+	font-size: $pfontsizeserif;
+	line-height: $lineheightserif;
+	width: 100%;
+}
+
+fieldset {
+	padding-left: $pfontsizeserif;
+	padding-right: $pfontsizeserif;
+	border: none;
+}
+
+textarea {
+	font-family: $fontstackserif;
+	font-size: $pfontsizeserif;
+	line-height: $lineheightserif;
+	width: 100%;
+	resize: vertical;
+	height: 6*$pfontsizeserif;
+	min-height: 2*$pfontsizeserif;
+}
+
+label {
+	font-family: $fontstacksans;
+	font-size: $pfontsizeserif*$fontratio;
+	line-height: $lineheightsans;
+	text-decoration: underline;
+}
+
+button:hover {
+	background-color: #272726;
+	color: white;
+	cursor: pointer;
+}
+
+
 nav {
 	a.sans {
 		font-size: $h3fontsizeserif*$fontratio;
@@ -302,5 +352,9 @@ nav {
 		padding-bottom: 0;
 		padding-right: .5*$pfontsizeserif;
 		padding-top: .5*$pfontsizeserif;
+	}
+	fieldset {
+		padding-left: .5*$pfontsizeserif;
+		padding-right: .5*$pfontsizeserif;
 	}
 }

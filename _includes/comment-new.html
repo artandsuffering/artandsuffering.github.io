@@ -1,15 +1,16 @@
-<h3>Respond to this</h3>
-<form action="/fake" method="post" id="commentform" class="form-horizontal">
+<p>Leave a comment...</p>
+<form action="/fake" method="post" id="commentform">
   <fieldset id="commentfields">
     <input name="redirect" type="hidden" value="{{ site.url }}{{ page.url }}">
     <input name="post_id" type="hidden" value="{{ slug }}">
     <input name="comment-site" type="hidden" value="{{ site.url }}">
-    <textarea name="message" id="message" placeholder="Continue the discussion."></textarea>
+	
+	<label for="message">Message:</label>
+	<textarea style="display: block;" name="message" id="message" placeholder="Blah blah blah blah."></textarea>
 
-    <label for="name">Name/alias <span>(Required, displayed)</span></label>
-    <input type="text" name="name" id="name" placeholder="Name" />
-
-    <button onclick="setupForm()" type="button" class="btn btn-primary" id="commentbutton">Leave response</button>
+	<label for="name">Name/alias:</label>
+    <input style="display: block;" type="text" name="name" id="name" value="Anonymous" />
+    <button onclick="setupForm()" type="button" id="commentbutton">Post comment</button>
   </fieldset>
 </form>
 <script>
@@ -19,12 +20,12 @@
       var requiredIds = [ 'message', 'name']
       var missing = requiredIds.filter(id => document.getElementById(id).value.length < 3)
       if (missing.length > 0) {
-        status.innerText = 'Some required fields are missing - (' + missing.join(', ') + ')'
+        status.innerText = 'These required fields are missing: ' + missing.join(', ') + '.'
         return
       }
       var button = document.getElementById('commentbutton')
-      if (button.innerText != 'Confirm comment') {
-        button.innerText = 'Confirm comment'
+      if (button.innerText != 'Confirm and post') {
+        button.innerText = 'Confirm and post'
         return
       }
       var form = document.getElementById('commentform')
