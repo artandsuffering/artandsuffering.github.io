@@ -10,14 +10,15 @@
 	{% assign author = site.authors[page.author] %}
 <p><br></p>
 <div id="comments">
-  <ul>
-  {% assign sorted_comments = comments | sort: 'date' %}
-  {% for comment in sorted_comments %}
-    <li>
-      {% include comment.html %}
-    </li>
-  {% endfor %}
-  </ul>
+	<p>Comments:</p>
+	<ul>
+	{% assign sorted_comments = comments | sort: 'date' %}
+	{% for comment in sorted_comments %}
+		<li>
+			{% include comment.html %}
+		</li>
+	{% endfor %}
+	</ul>
 </div>
 {% endif %}
 {% if page.commenting == 'open' %}
