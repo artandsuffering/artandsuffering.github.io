@@ -1,1 +1,4 @@
-
+language: ruby
+install:
+  - gem uninstall bundler
+script: "rake"
