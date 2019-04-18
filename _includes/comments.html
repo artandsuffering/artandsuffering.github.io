@@ -7,19 +7,18 @@
 {% endfor %}
 {% assign comment_count = comments | size %}
 {% if comment_count > 0 %}
-	{% assign author = site.authors[page.author] %}
-<p><br></p>
-<div id="comments">
-	<h3>Comments:</h3>
-	<ul>
-	{% assign sorted_comments = comments | sort: 'date' %}
-	{% for comment in sorted_comments %}
-		<li>
-			{% include comment.html %}
-		</li>
-	{% endfor %}
-	</ul>
-</div>
+	<p><br></p>
+	<div id="comments">
+		<h3>Comments:</h3>
+		<ul>
+		{% assign sorted_comments = comments | sort: 'date' %}
+		{% for comment in sorted_comments %}
+			<li>
+				{% include comment.html %}
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
 {% endif %}
 {% if page.commenting == 'open' %}
 	{% include comment-new.html %}
