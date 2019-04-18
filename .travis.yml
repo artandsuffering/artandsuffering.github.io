@@ -1,3 +1,0 @@
-language: ruby
-install:
-  - gem uninstall bundler
