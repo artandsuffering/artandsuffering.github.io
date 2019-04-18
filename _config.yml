@@ -1,7 +1,5 @@
 url: "https://artandsuffering.com"
 
-permalink: /:year/:month/:day/:title:output_ext
-
 sass:
   sass_dir: _sass
     
@@ -20,6 +18,7 @@ authors:
     name: artandsuffering
     email: "lukecolburnyo@yahoo.com"
     url: "https://artandsuffering.com"
+    permalink: /:year/:month/:day/:title:output_ext
     
 plugins:
   - jekyll-seo-tag
