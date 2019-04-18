@@ -4,6 +4,12 @@ permalink: /:year/:month/:day/:title:output_ext
 
 sass:
     sass_dir: _sass
+
+authors:
+  artandsuffering:
+    name: artandsuffering
+    email: artandsuffering@gmail.com
+    url: https://artandsuffering.com
     
 defaults:
   -
@@ -12,9 +18,16 @@ defaults:
       type: "posts"
     values:
       last-modified: "0000-00-00"
+      author: artandsuffering
+      commenting: open
       
 plugins:
   - jekyll-seo-tag
 
 title: Art & Suffering
 description: A blog about art, philosophy, and managing depression.
+
+emptyArray: []
+
+comments:
+  receiver: https://artandsuffering-comments.azurewebsites.net/api/PostComment

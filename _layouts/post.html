@@ -18,5 +18,6 @@ layout: default
 		{% for category in page.categories %}
 		<a class="sans" href="/categories/{{ category }}.html">{{ category }}</a>
 		{% endfor %}
+		{% include comments.html %}
 	</footer>
 </article>
