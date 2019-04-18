@@ -13,6 +13,14 @@ defaults:
     values:
       last-modified: "0000-00-00"
       commenting: open
+      author: artandsuffering
+
+authors:
+    artandsuffering:
+        name: artandsuffering
+        email: lukecolburnyo@yahoo.com
+        url: https://artandsuffering.com
+    
       
 plugins:
   - jekyll-seo-tag
