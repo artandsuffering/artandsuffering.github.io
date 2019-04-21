@@ -91,6 +91,10 @@ h3, h4, h5 {
 	bottom: $h3fontsizeserif*$fontratio*($lineheightsans/1em) + .5*$pfontsizeserif;
 }
 
+.post-title {
+	h5 {font-weight: normal;}
+}
+
 
 #postcategories {border-bottom: 1px solid black;}
 
