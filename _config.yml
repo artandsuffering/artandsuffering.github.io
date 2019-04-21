@@ -4,13 +4,10 @@ permalink: /:year/:month/:day/:title:output_ext
 
 sass:
   sass_dir: _sass
+
+future: false
     
 defaults:
--
-  scope:
-    path: ""
-  values:
-    --future: false
 -
   scope:
     path: ""
