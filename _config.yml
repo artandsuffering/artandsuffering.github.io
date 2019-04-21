@@ -9,6 +9,11 @@ defaults:
 -
   scope:
     path: ""
+  values:
+    future: false
+-
+  scope:
+    path: ""
     type: "posts"
   values:
     last-modified: "0000-00-00"
