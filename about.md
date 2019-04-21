@@ -12,7 +12,7 @@ title: About
 		<br>
 		<br>
 		<p>
-			The background image is Félix Vallotton's woodcut <a href="https://www.vangoghmuseum.nl/en/prints/collection/p1162V2000">Le Beau Soir</a>.
+			The background image is Félix Vallotton's woodcut <a href="https://www.vangoghmuseum.nl/en/prints/collection/p1162V2000" target="_blank">Le Beau Soir</a>.
 		</p>
 	</section>
 </section>
