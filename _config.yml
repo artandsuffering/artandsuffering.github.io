@@ -10,7 +10,7 @@ defaults:
   scope:
     path: ""
   values:
-    future: false
+    --future: false
 -
   scope:
     path: ""
