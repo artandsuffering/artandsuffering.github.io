@@ -1,8 +1,7 @@
-<p><br></p>
+
 <blockquote id="{{ comment.id }}">
   {{ comment.message | markdownify }}
-  ________<br>
   <cite>
-      (left by <i>{{ comment.name }}</i>, on <i>{{ comment.date | date_to_string }}</i>)
+	— left by <i>{{ comment.name }}</i>, on <i>{{ comment.date | date_to_string }}</i>
   </cite>
 </blockquote>
