@@ -3,6 +3,7 @@ layout: post
 categories: art activism
 stickied: true
 title: Examples of Political Art
+last-modified: 2019-04-22
 ---
 Below are some examples of political/activist art that I've come across. Some are pretty cool! What do you think of political art? Is it effective? Would the messages made by this art be better pushed through "real" politics? I've also included some links to discussions about these questions. Personally, I'm still thinking about it.
 
