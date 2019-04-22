@@ -7,6 +7,6 @@
 	
 	<img class="icon" src="/assets/images/tag.svg">
 	{% for category in post.categories %}
-		<a class="sans" style="display:inline;" href="/categories/{{ category }}.html">{{ category }}</a>
+		<a class="sans" style="display:inline;" href="/categories/{{ category }}.html">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
 	{% endfor %}
 </div>
